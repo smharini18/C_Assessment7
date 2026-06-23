@@ -3,14 +3,14 @@ void disp_assend(int);
 int main()
 {
     int x;
-    disp_assend(1);
+    x=5;
+    disp_assend(x);
 }
 void disp_assend(int x)
 {
-    loop:if(x<=5)
+    int i;
+    for(i=1;i<=x;i++)
     {
-        printf("%d\n",x);
-        x=x+1;
-        goto loop;
+        printf("%d\n",i);
     }
 }
