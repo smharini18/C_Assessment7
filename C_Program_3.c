@@ -2,10 +2,7 @@
 void disp_assend(int);
 int main()
 {
-int x;
-printf("Enter starting value:");
-scanf("%d",&x);
-disp_assend(x);
+disp_assend(1);
 }
 void disp_assend(int x)
 {
