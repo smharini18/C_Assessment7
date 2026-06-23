@@ -1,16 +1,21 @@
-#include <stdio.h>
-void disp_sum()
-{
-    int a=5,b=0;
-    while(a>0)
-    {
-    b=b+a;
-    a--;
-    }
-    printf("%d",b);
-    
-}
+#include<stdio.h>
+void disp_assend(int);
 int main()
 {
-    disp_sum();
+int x;
+printf("Enter starting value:");
+scanf("%d",&x);
+disp_assend(x);
+}
+void disp_assend(int x)
+{
+int sum=0;
+loop:
+if(x<=5)
+{
+sum=sum+x;
+x=x+1;
+goto loop;
+}
+printf("%d",sum);
 }
