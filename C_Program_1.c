@@ -1,15 +1,16 @@
-#include <stdio.h>
-void disp_assend()
-{
-    int a=1;
-    while(a<6)
-    {
-    printf("%d\n",a);
-    a++;
-    }
-    
-}
+#include<stdio.h>
+void disp_assend(int);
 int main()
 {
-    disp_assend();
+    int x;
+    disp_assend(1);
+}
+void disp_assend(int x)
+{
+    loop:if(x<=5)
+    {
+        printf("%d\n",x);
+        x=x+1;
+        goto loop;
+    }
 }
